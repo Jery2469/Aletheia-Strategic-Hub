@@ -65,8 +65,8 @@ PORTADA = """
     <br>
     <div style="display:flex; flex-direction:column; align-items:center; gap:20px;">
         <a href="#" id="paypal" style="background:#ffc439;color:#003087;padding:20px;width:300px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid #D4AF37;">PAGAR CON PAYPAL</a>
-        <a href="#" id="qvapay" style="background:#4CAF50;color:#fff;padding:20px;width:300px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid #D4AF37;">PAGAR CON QVAPAY (USDT)</a>
-        <a href="#" id="tropipay" style="background:#2196F3;color:#fff;padding:20px;width:300px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid #D4AF37;">PAGAR CON TROPIPAY (Tarjeta)</a>
+        <a href="/create_payment/qvapay" id="qvapay" style="background:#4CAF50;color:#fff;padding:20px;width:300px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid #D4AF37;">PAGAR CON QVAPAY (USDT)</a>
+        <a href="/create_payment/tropipay" id="tropipay" style="background:#2196F3;color:#fff;padding:20px;width:300px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid #D4AF37;">PAGAR CON TROPIPAY (Tarjeta)</a>
     </div>
     <p style="margin-top:50px; color:#444;">CEO JERY - SISTEMA ACTIVO</p>
 </body>
@@ -306,7 +306,7 @@ class PentagonAI:
 if __name__ == "__main__":
     
 
-    logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
+    
 
     # Inicializar PaymentHub
     p_hub = PaymentHub()
