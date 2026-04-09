@@ -323,8 +323,7 @@ def home():
 # Ejecutar App (Web + IA)
 # -------------------------------
 if __name__ == "__main__":
-    import threading
-    import logging
+    
 
     logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 
