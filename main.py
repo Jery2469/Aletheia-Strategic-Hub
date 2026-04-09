@@ -72,8 +72,49 @@ PORTADA = """
 def home():
     logging.info("🌐 Acceso a la página principal")
     return render_template_string(PORTADA)
+    # -------------------------------
+# BLOQUE 10/10 - Cierre del Proyecto y Ejecución IA
+# -------------------------------
+PORTADA += """
+    <p style="margin-top:50px; color:#444;">CEO JERY - SISTEMA ACTIVO</p>
+    </div>
+</body>
+</html>
+"""
+
+@app.route('/')
+def home():
+    return render_template_string(PORTADA)
+
+class PentagonAI:
+    def __init__(self):
+        self.is_running = True
+
+    def run(self):
+        while self.is_running:
+            # Aquí la IA analiza oportunidades y coordina acciones
+            print("[SISTEMA] Pentágono de Poder analizando oportunidades...")
+            time.sleep(60)  # Ajustable según necesidades
+
+if __name__ == "__main__":
+    import threading
+    # Arrancar la IA en hilo separado para no bloquear la web
+    engine = PentagonAI()
+    threading.Thread(target=engine.run, daemon=True).start()
+
+    # Arrancar servidor Flask
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
+    
+    
+    
+    
+    
+    
+    
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
     logging.info(f"🚀 Iniciando servidor en puerto {port}")
     app.run(host='0.0.0.0', port=port)
+    
