@@ -34,7 +34,7 @@ class AletheiaHub:
             "HUB_TROPIPAY_CLIENT_ID": os.environ.get('HUB_TROPIPAY_CLIENT_ID'),
             "HUB_TROPIPAY_CLIENT_SECRET": os.environ.get('HUB_TROPIPAY_CLIENT_SECRET'),
             "HUB_BASE_URL": os.environ.get('HUB_BASE_URL')
-        }
+        } 
         self.validate_config()
 
     def validate_config(self):
