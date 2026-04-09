@@ -299,26 +299,7 @@ class PentagonAI:
             except Exception as e:
                 logging.error(f"[PentagonAI] Error en loop: {str(e)}")
                 time.sleep(5)
-                # -------------------------------
-# Portada Web
-# -------------------------------
-PORTADA = """
-<body style="background:#000;color:#D4AF37;text-align:center;padding:100px;font-family:serif;">
-    <h1 style="font-size:3.5rem;">ALETHEIA HUB STRATEGIC</h1>
-    <p style="color:#fff;letter-spacing:2px;font-family:sans-serif;">INGRESOS AUTÓNOMOS 24/7</p>
-    <br>
-    <div style="display:flex; flex-direction:column; align-items:center; gap:20px;">
-        <a href="#" style="background:#ffc439;color:#003087;padding:20px;width:300px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid #D4AF37;">PAGAR CON PAYPAL</a>
-        <a href="#" style="background:#4CAF50;color:#fff;padding:20px;width:300px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid #D4AF37;">PAGAR CON QVAPAY (USDT)</a>
-        <a href="#" style="background:#2196F3;color:#fff;padding:20px;width:300px;border-radius:50px;text-decoration:none;font-weight:bold;border:2px solid #D4AF37;">PAGAR CON TROPIPAY (Tarjeta)</a>
-    </div>
-    <p style="margin-top:50px; color:#444;">CEO JERY - SISTEMA ACTIVO</p>
-</body>
-"""
-
-@app.route('/')
-def home():
-    return render_template_string(PORTADA)
+ 
     # -------------------------------
 # Ejecutar App (Web + IA)
 # -------------------------------
